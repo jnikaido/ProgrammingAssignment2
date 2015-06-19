@@ -4,7 +4,12 @@
 ## Write a short comment describing this function
 ##
 ## makeCacheMatrix creates a matrix object that can cache its inverse
-
+## function will do the following operations:
+##    * set a matrix object
+##    * get a matrix object
+##    * set the inverse of the matrix given
+##    * get the inverse of the matrix given
+##      (if the matrix is the same, then gets it from cache)
 
 makeCacheMatrix <- function(x = matrix()) {
   
@@ -40,7 +45,6 @@ makeCacheMatrix <- function(x = matrix()) {
   ## list the methods of the function
   list(set = set, get = get,
        setInverse = setInverse, getInverse = getInverse)
-  
 }
 
 
